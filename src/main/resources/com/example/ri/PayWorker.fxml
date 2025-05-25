@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ri.PayWorkerController">
+   <children>
+      <ImageView fitHeight="522.0" fitWidth="877.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/i9.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="79.0" layoutY="124.0" prefHeight="335.0" prefWidth="737.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="92.0" prefHeight="18.0" prefWidth="73.0" text="Worker ID:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddPaymentButton" layoutX="625.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleAddPayWorker" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Add" />
+            <TextField fx:id="SalaryField" layoutX="144.0" layoutY="129.0" onAction="#initialize" prefHeight="13.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="12.0" layoutY="133.0" prefHeight="18.0" prefWidth="73.0" text="Salary:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="178.0" prefHeight="20.0" prefWidth="109.0" text="Bank Account:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="394.0" layoutY="92.0" prefHeight="20.0" prefWidth="109.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dateField" layoutX="504.0" layoutY="88.0" onAction="#initialize" prefHeight="13.0" prefWidth="115.0" />
+            <ComboBox fx:id="workerIDComboBox" layoutX="144.0" layoutY="89.0" onAction="#initialize" prefHeight="26.0" prefWidth="115.0" styleClass="combo" stylesheets="@style.css" />
+            <ComboBox fx:id="bankAcountComboBox" layoutX="144.0" layoutY="174.0" onAction="#initialize" prefHeight="26.0" prefWidth="115.0" styleClass="combo" stylesheets="@style.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="557.0" layoutY="472.0" prefHeight="27.0" prefWidth="298.0">
+         <children>
+            <Button fx:id="logoutButton" layoutX="169.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Logout" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="86.0" layoutY="14.0" prefHeight="63.0" prefWidth="697.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <Button fx:id="myInfoButton" layoutX="22.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleMyInfo" prefHeight="34.0" prefWidth="115.0" text="My Information">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="villaButton" layoutX="156.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelVilla" prefHeight="34.0" prefWidth="115.0" text="Villas">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ownerButton" layoutX="291.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelOwner" prefHeight="34.0" prefWidth="115.0" text="Owner">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="paymentButton" layoutX="568.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelPayment" prefHeight="34.0" prefWidth="115.0" text="Payments">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="workerButton" layoutX="426.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelWorker" prefHeight="34.0" prefWidth="115.0" text="Workers">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerPane" layoutX="421.0" layoutY="83.0" prefHeight="27.0" prefWidth="300.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchWorkerButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleSearchWorker" prefHeight="34.0" prefWidth="115.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addWorkerButton" layoutX="169.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleAddWorker" prefHeight="34.0" prefWidth="115.0" text="Add new worker">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ownerPane" layoutX="285.0" layoutY="83.0" prefHeight="39.0" prefWidth="291.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchOwnerButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleSearchOwner" prefHeight="34.0" prefWidth="115.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addOwnerButton" layoutX="145.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleAddOwner" prefHeight="34.0" prefWidth="122.0" text="Add Owner">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PaymentPane" layoutX="487.0" layoutY="81.0" prefHeight="43.0" prefWidth="374.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchPaymentButton" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#handaleSearchPayment" prefHeight="34.0" prefWidth="122.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="payWorkerButton" layoutX="254.0" layoutY="4.0" mnemonicParsing="false" onAction="#handalePayWorker" prefHeight="34.0" prefWidth="115.0" text="Pay Worker">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addPaymentButton" layoutX="132.0" layoutY="4.0" mnemonicParsing="false" onAction="#handaleAddPayment" prefHeight="34.0" prefWidth="115.0" text="Add Payment">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="villaPane" layoutX="187.0" layoutY="83.0" prefHeight="39.0" prefWidth="233.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchVillsButton" layoutX="59.0" layoutY="2.0" mnemonicParsing="false" onAction="#handaleSearchVilla" prefHeight="34.0" prefWidth="115.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

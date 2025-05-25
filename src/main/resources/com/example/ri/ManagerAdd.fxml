@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ri.ManagerAddController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="918.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/6faf0a221015563.67cd7f0917003.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="86.0" layoutY="127.0" prefHeight="332.0" prefWidth="738.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="firstNameField" layoutX="137.60000000000002" layoutY="59.199999999999996" prefHeight="28.0" prefWidth="115.0" AnchorPane.bottomAnchor="252.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="486.0" AnchorPane.topAnchor="58.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="lastNameField" layoutX="607.0" layoutY="56.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="middleNameField" layoutX="371.0" layoutY="59.0" prefHeight="19.0" prefWidth="115.0" />
+            <TextField fx:id="streetField" layoutX="371.0" layoutY="110.0" prefHeight="27.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="61.0" prefHeight="18.0" prefWidth="73.0" text="First Name:" />
+            <Label alignment="CENTER" layoutX="265.0" layoutY="63.0" prefHeight="18.0" prefWidth="82.0" text="Middle Name:" />
+            <Label alignment="CENTER" layoutX="499.0" layoutY="61.0" prefHeight="18.0" prefWidth="73.0" text="Last Name:" />
+            <Label alignment="CENTER" layoutX="11.0" layoutY="35.0" prefHeight="18.0" prefWidth="73.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="95.0" prefHeight="18.0" prefWidth="73.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="118.0" prefHeight="18.0" prefWidth="73.0" text="City:" />
+            <Label alignment="CENTER" layoutX="252.0" layoutY="114.0" prefHeight="18.0" prefWidth="73.0" text="Street:" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="158.0" prefHeight="20.0" prefWidth="82.0" text="National ID:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="13.0" layoutY="207.0" prefHeight="20.0" prefWidth="122.0" text="Phone Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="6.0" layoutY="252.0" prefHeight="18.0" prefWidth="73.0" text="Email:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="266.0" layoutY="255.0" prefHeight="18.0" prefWidth="73.0" text="Salary:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityField" layoutX="137.0" layoutY="111.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="nationalIdField" layoutX="138.0" layoutY="156.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="phoneField" layoutX="139.0" layoutY="204.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="emailField" layoutX="139.0" layoutY="251.0" prefHeight="13.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="265.0" layoutY="205.0" prefHeight="20.0" prefWidth="105.0" text="Bank Account :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bankAccountField" layoutX="371.0" layoutY="203.0" prefHeight="27.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="299.0" prefHeight="20.0" prefWidth="82.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="262.0" layoutY="155.0" prefHeight="20.0" prefWidth="82.0" text="BirthDate:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="add" layoutX="638.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleADD" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Add" />
+            <Label alignment="CENTER" layoutX="501.0" layoutY="155.0" prefHeight="20.0" prefWidth="106.0" text="Compound ID:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salaryField" layoutX="372.0" layoutY="251.0" prefHeight="28.0" prefWidth="115.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="birthDateField" layoutX="372.0" layoutY="152.0" prefHeight="28.0" prefWidth="115.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="passwordField" layoutX="136.0" layoutY="295.0" prefHeight="28.0" prefWidth="115.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <ComboBox fx:id="compoundIdComboBox" layoutX="607.0" layoutY="152.0" prefHeight="20.0" prefWidth="114.0" styleClass="combo" stylesheets="@style.css" />
+            <Button fx:id="Update" layoutX="638.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleUpdateManager" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Update" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="logoutButton" layoutX="809.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Logout" />
+      <AnchorPane layoutX="211.0" layoutY="14.0" prefHeight="63.0" prefWidth="487.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <Button fx:id="myInfoButton" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMyInfo" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="My Information">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="managerButton" layoutX="186.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleManager" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Manager">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="compoundButton" layoutX="352.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleCompound" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Compound">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="CompoundPane" layoutX="480.0" layoutY="83.0" prefHeight="39.0" prefWidth="300.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchCompoundButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleSearchCompound" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addCompoundButton" layoutX="147.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleAddCompound" prefHeight="34.0" prefWidth="138.0" stylesheets="@style.css" text="Add new Compound">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="managerPane" layoutX="305.0" layoutY="83.0" prefHeight="39.0" prefWidth="300.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchManagerButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleSearchManager" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addManagerButton" layoutX="158.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleAddManager" prefHeight="34.0" prefWidth="127.0" stylesheets="@style.css" text="Add new Manager">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

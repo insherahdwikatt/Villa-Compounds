@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ri.WorkerAddController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="870.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/i9.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="81.0" layoutY="129.0" prefHeight="335.0" prefWidth="737.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <TextField fx:id="firstNameField" layoutX="137.60000000000002" layoutY="59.199999999999996" prefHeight="28.0" prefWidth="115.0" AnchorPane.bottomAnchor="252.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="486.0" AnchorPane.topAnchor="58.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+            </TextField>
+            <TextField fx:id="lastNameField" layoutX="601.0" layoutY="57.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="middleNameField" layoutX="371.0" layoutY="59.0" prefHeight="19.0" prefWidth="115.0" />
+            <TextField fx:id="streetField" layoutX="371.0" layoutY="110.0" prefHeight="27.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="61.0" prefHeight="18.0" prefWidth="73.0" text="First Name:" />
+            <Label alignment="CENTER" layoutX="265.0" layoutY="63.0" prefHeight="18.0" prefWidth="82.0" text="Middle Name:" />
+            <Label alignment="CENTER" layoutX="499.0" layoutY="62.0" prefHeight="18.0" prefWidth="73.0" text="Last Name:" />
+            <Label alignment="CENTER" layoutX="11.0" layoutY="35.0" prefHeight="18.0" prefWidth="73.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="95.0" prefHeight="18.0" prefWidth="73.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="118.0" prefHeight="18.0" prefWidth="73.0" text="City:" />
+            <Label alignment="CENTER" layoutX="252.0" layoutY="114.0" prefHeight="18.0" prefWidth="73.0" text="Street:" />
+            <Label alignment="CENTER" layoutX="20.0" layoutY="158.0" prefHeight="20.0" prefWidth="82.0" text="National ID:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="13.0" layoutY="207.0" prefHeight="20.0" prefWidth="122.0" text="Phone Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="6.0" layoutY="252.0" prefHeight="18.0" prefWidth="73.0" text="Email:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityField" layoutX="137.0" layoutY="111.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="nationalIdField" layoutX="138.0" layoutY="156.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="phoneNumberField" layoutX="139.0" layoutY="204.0" prefHeight="13.0" prefWidth="115.0" />
+            <TextField fx:id="emailField" layoutX="139.0" layoutY="251.0" prefHeight="13.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="265.0" layoutY="205.0" prefHeight="20.0" prefWidth="105.0" text="Bank Account :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bankAccountField" layoutX="371.0" layoutY="203.0" prefHeight="27.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="262.0" layoutY="155.0" prefHeight="20.0" prefWidth="82.0" text="BirthDate:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="ADD" layoutX="629.0" layoutY="302.0" mnemonicParsing="false" onAction="#handeleADD" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Add" />
+            <Label alignment="CENTER" layoutX="236.0" layoutY="255.0" prefHeight="20.0" prefWidth="105.0" text="Salary:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="21.0" layoutY="299.0" prefHeight="20.0" prefWidth="105.0" text="Work Houres:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salaryField" layoutX="373.0" layoutY="252.0" prefHeight="27.0" prefWidth="115.0" />
+            <TextField fx:id="workHoursField" layoutX="139.0" layoutY="295.0" prefHeight="27.0" prefWidth="115.0" />
+            <TextField fx:id="birthDateField" layoutX="371.0" layoutY="151.0" prefHeight="27.0" prefWidth="115.0" />
+            <Label alignment="CENTER" layoutX="485.0" layoutY="113.0" prefHeight="20.0" prefWidth="82.0" text="Field:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="503.0" layoutY="155.0" prefHeight="20.0" prefWidth="94.0" text="End of lease:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EndOfleaseField" layoutX="601.0" layoutY="151.0" prefHeight="13.0" prefWidth="115.0" />
+            <ComboBox fx:id="fieldBox" layoutX="602.0" layoutY="110.0" prefHeight="26.0" prefWidth="113.0" styleClass="combo" stylesheets="@style.css" />
+            <Button fx:id="Update" layoutX="520.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="101.0" layoutY="14.0" prefHeight="63.0" prefWidth="697.0" styleClass="welcome-pane" stylesheets="@style.css">
+         <children>
+            <Button fx:id="myInfoButton" layoutX="22.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleMyInfo" prefHeight="34.0" prefWidth="115.0" text="My Information">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="villaButton" layoutX="156.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelVilla" prefHeight="34.0" prefWidth="115.0" text="Villas">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="ownerButton" layoutX="291.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelOwner" prefHeight="34.0" prefWidth="115.0" text="Owners">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="paymentButton" layoutX="568.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelPayment" prefHeight="34.0" prefWidth="115.0" text="Payments">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="workerButton" layoutX="426.0" layoutY="15.0" mnemonicParsing="false" onAction="#handelWorker" prefHeight="34.0" prefWidth="115.0" text="Workers">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="workerPane" layoutX="421.0" layoutY="83.0" prefHeight="27.0" prefWidth="300.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchWorkerButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleSearchWorker" prefHeight="34.0" prefWidth="115.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addWorkerButton" layoutX="169.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleAddWorker" prefHeight="34.0" prefWidth="115.0" text="Add new worker">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ownerPane" layoutX="300.0" layoutY="83.0" prefHeight="39.0" prefWidth="300.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchOwnerButton" layoutX="20.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleSearchOwner" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addOwnerButton" layoutX="170.0" layoutY="3.0" mnemonicParsing="false" onAction="#handaleAddOwner" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Add new Owner">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logoutButton" layoutX="762.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="94.0" stylesheets="@style.css" text="Logout" />
+      <AnchorPane fx:id="PaymentPane" layoutX="488.0" layoutY="81.0" prefHeight="43.0" prefWidth="374.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchPaymentButton" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#handaleSearchPayment" prefHeight="34.0" prefWidth="122.0" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="payWorkerButton" layoutX="254.0" layoutY="4.0" mnemonicParsing="false" onAction="#handalePayWorker" prefHeight="34.0" prefWidth="115.0" text="Pay Worker">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="addPaymentButton" layoutX="132.0" layoutY="4.0" mnemonicParsing="false" onAction="#handaleAddPayment" prefHeight="34.0" prefWidth="115.0" text="Add Payment">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="villaPane" layoutX="217.0" layoutY="83.0" prefHeight="39.0" prefWidth="204.0" styleClass="welcome-pane" stylesheets="@style.css" visible="false">
+         <children>
+            <Button fx:id="searchVillsButton" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" onAction="#handaleSearchVilla" prefHeight="34.0" prefWidth="115.0" stylesheets="@style.css" text="Search">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

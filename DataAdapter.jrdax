@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl">
+	<name>RIconnection</name>
+	<classpath>C:\Users\inshe\OneDrive\Desktop\postgresql-42.6.0.jar</classpath>
+	<driver>org.postgresql.Driver</driver>
+	<username>postgres</username>
+	<password>1234</password>
+	<url>jdbc:postgresql://localhost:5432/RealEstate</url>
+	<database></database>
+	<savePassword>true</savePassword>
+	<serverAddress></serverAddress>
+</jdbcDataAdapter>
