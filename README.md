@@ -1,46 +1,39 @@
-# 🏡 Villa Compounds Management System
+# Villa Compounds Management System
 
-A JavaFX-based desktop application for managing villa compounds, owners, workers, payments, and more.
+This is a JavaFX-based desktop application designed to manage villa compounds, owners, workers, and related payments. The system supports different user roles like **Admin** and **Manager**, offering distinct functionalities to streamline compound administration.
 
----
+## 💡 Features
 
-## 📌 Features
+- **Login System** for admins and managers.
+- **Owner Management**: Add, search, and update owners.
+- **Compound Management**: Manage compounds and villa assignments.
+- **Villa Management**: Automatically link villas to owners upon payment.
+- **Payment Handling**:
+  - Cash or Cheques
+  - Automatic villa price retrieval from compound data
+- **Worker Payment System**:
+  - Auto-fetch bank account based on selected worker ID
+- **Report Generation** using JasperReports (for admin role).
+- **Search Functionalities** for all modules.
 
-- Manage compounds and villas
-- Assign villas to owners
-- Handle payments (cash / cheques)
-- Worker management and salary tracking
-- Search & reporting interfaces
-- Authentication system for admins and managers
+## 🏗️ Technologies Used
 
----
-
-## 🚀 How to Run
-
-### Requirements
-
-- Java 17+ (OpenJDK 21+ recommended)
-- JavaFX 21+
+- Java 17+
+- JavaFX 21
 - PostgreSQL
+- JDBC
+- FXML
 - Maven
+- JasperReports
+- CSS for UI Styling
 
-### Steps
+## 🚧 To Be Added
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/insherahdwikatt/Villa-Compounds.git
+- Maintenance/Repair table and module for handling repair requests and costs per villa.
 
-# 2. Open in IntelliJ or any Java IDE
+## 📦 How to Run
 
-# 3. Ensure JavaFX SDK is configured in the IDE
-
-# 4. Configure PostgreSQL database:
-#    - Create DB schema
-#    - Import tables (check `DBConnector.java`)
-#    - Update connection details (URL, user, password)
-
-# 5. Run `RI.java` as JavaFX Application
-
-
-### Project Status Note:
-# The project is still in progress. A repair table relation is planned to be added to handle maintenance and repair operations related to villas or workers.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/insherahdwikatt/Villa-Compounds.git
+   cd Villa-Compounds
